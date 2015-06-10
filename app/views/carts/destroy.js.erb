@@ -1,0 +1,13 @@
+//if ($('#cart').length == 1) { $('#cart').hide("blind", {direction: "vertical" }, 1000); }
+//$('#cart tr').not('.total_line').remove();
+
+
+//$('#cart tr').not('.total_line').remove();
+//$('#cart').hide('blind', {direction: "vertical" }, 1000);
+
+$('#cart').html("<%= escape_javascript render(@cart) %>");
+$('#cart').hide('fade', 1000);
+
+$('#cart').html("<%= escape_javascript render(@cart) %>");
+$('.total_line').hide('fade', 1000);
+
